@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/main_toolbar_refresh"
+        android:icon="@drawable/ic_rotate_right_black_36dp"
+        android:title="刷新"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/main_toolbar_regard"
+        android:icon="@drawable/ic_folder_shared_black_36dp"
+        android:title="关于"
+        app:showAsAction="always"/>
+
+</menu>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.lxymediaplayer.LxyVerticalPlayerActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/beijin14">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/ting104"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/beijin14">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/beijin14">
+
+                <VideoView
+                    android:layout_gravity="center"
+                    android:id="@+id/video_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <TableRow>
+
+                    <TextView android:text="视频名称" />
+
+                    <TextView android:id="@+id/media_title" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView android:text="视频大小" />
+
+                    <TextView android:id="@+id/media_size" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="视频时长" />
+
+                    <TextView android:id="@+id/media_duration" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="创建时间" />
+
+                    <TextView android:id="@+id/media_create_time" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="视频位置" />
+
+                    <TextView android:id="@+id/media_path" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header"/>
+</android.support.v4.widget.DrawerLayout>

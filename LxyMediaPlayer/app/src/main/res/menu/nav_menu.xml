@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_file"
+        android:icon="@drawable/ic_folder_open_black_36dp"
+        android:title="File"/>
+    <item
+        android:id="@+id/nav_internet"
+        android:icon="@drawable/ic_send_black_36dp"
+        android:title="Internet"/>
+    <item
+        android:id="@+id/nav_camera"
+        android:icon="@drawable/ic_fiber_dvr_black_36dp"
+        android:title="Camera"/>
+    <item
+        android:id="@+id/nav_regard"
+        android:icon="@drawable/ic_main_toolbar_regard1"
+        android:title="regard"/>
+    <item
+        android:id="@+id/nav_exit"
+        android:icon="@drawable/ic_keyboard_return_black_36dp"
+        android:title="Exit"/>
+</group>
+</menu>
